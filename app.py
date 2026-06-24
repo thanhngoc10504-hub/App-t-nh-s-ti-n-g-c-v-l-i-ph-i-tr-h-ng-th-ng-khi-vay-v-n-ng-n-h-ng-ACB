@@ -1,5 +1,4 @@
 import streamlit as st
-st.image("logo.jpg.jfif")
 
 st.set_page_config(page_title="Tính Khoản Vay", page_icon="💰")
 
@@ -9,7 +8,7 @@ st.title("💰 Công Cụ Tính Khoản Vay")
 so_tien_vay = st.number_input(
     "Nhập số tiền vay (VNĐ)",
     min_value=0,
-    value=200000000,
+    value=150000000,
     step=1000000
 )
 
@@ -23,7 +22,7 @@ so_thang_vay = st.number_input(
 lai_suat_nam = st.number_input(
     "Nhập lãi suất năm (%/năm)",
     min_value=0.0,
-    value=9,3 ,
+    value=12.0,
     step=0.1
 )
 
@@ -60,5 +59,4 @@ if st.button("Tính toán"):
 
     st.info(
         f"Tổng tiền lãi phải trả: {tong_lai:,.0f} VNĐ"
-    )
     )

@@ -9,8 +9,8 @@ st.title("💰 Công Cụ Tính Khoản Vay")
 so_tien_vay = st.number_input(
     "Nhập số tiền vay (VNĐ)",
     min_value=0,
-    value=150000000,
-    step=1000000
+    value=20000000,
+    step=200000000
 )
 
 so_thang_vay = st.number_input(
@@ -23,7 +23,7 @@ so_thang_vay = st.number_input(
 lai_suat_nam = st.number_input(
     "Nhập lãi suất năm (%/năm)",
     min_value=0.0,
-    value=12.0,
+    value=9,3 ,
     step=0.1
 )
 

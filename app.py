@@ -1,4 +1,5 @@
 import streamlit as st
+st.image("logo.jpg.jfif")
 
 st.set_page_config(page_title="Tính Khoản Vay", page_icon="💰")
 

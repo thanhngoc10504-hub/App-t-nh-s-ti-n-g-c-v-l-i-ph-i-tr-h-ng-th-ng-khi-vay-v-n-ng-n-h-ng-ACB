@@ -9,8 +9,8 @@ st.title("💰 Công Cụ Tính Khoản Vay")
 so_tien_vay = st.number_input(
     "Nhập số tiền vay (VNĐ)",
     min_value=0,
-    value=20000000,
-    step=200000000
+    value=200000000,
+    step=1000000
 )
 
 so_thang_vay = st.number_input(
@@ -60,4 +60,5 @@ if st.button("Tính toán"):
 
     st.info(
         f"Tổng tiền lãi phải trả: {tong_lai:,.0f} VNĐ"
+    )
     )
